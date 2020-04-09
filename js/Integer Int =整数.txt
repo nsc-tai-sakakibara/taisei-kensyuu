@@ -1,0 +1,23 @@
+Integer Int =整数
+
+Double,Float =0.0
+
+Double = 64bit
+Floatt = 32bit
+
+String = 文字列　'seraku 2020' "nsc"
+
+Boolean = true false,1,0,'1''0'
+
+print
+
+write
+read
+
+print screen => printScreen camelCase
+
+print screen => print_screen snacke_case
+
+PrintScreen --> pascal case
+
+_printScreen
