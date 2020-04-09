@@ -1,0 +1,29 @@
+<script>
+
+    let num1 = 2;
+    let num2 = 5;
+
+    console.log('Before');
+    console.log('num1: ' + num1);
+    console.log('num2: ' + num2);
+
+    //値を逆に　　2通り
+    //pattern1
+    //新しく変数を１つ作るパターン
+    let temp = num1;
+    num1 = num2;
+    num2 = temp;
+
+    console.log('After1');
+    console.log('num1: ' + num1);
+    console.log('num2: ' + num2);
+
+    //pattern2
+    //num1,num2 以外変数を使わないパターン
+    [num1 , num2] = [num2 , num1];
+
+    console.log('After2');
+    console.log('num1: ' + num1);
+    console.log('num2: ' + num2);
+
+</script>
