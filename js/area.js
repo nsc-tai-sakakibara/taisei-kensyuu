@@ -10,11 +10,9 @@ function getArea(length, width) {
 
     area = length * width;
     return area;
-    console.log(area);
-
 }
-getArea(2,3);
-console.log(area);
+
+console.log('面積は'+getArea(2,3));  //大文字Aのために数時間かかった
 
 /**
  * 四角の周囲を計算してください。
@@ -28,7 +26,6 @@ function getPerimeter(length, width) {
 
     perimeter = length * 2 + width * 2;
     return perimeter
-    console.log(perimeter);
 
 }
-getPerimeter(2,3);
+console.log('四角の周囲は'+getPerimeter(2,3));
