@@ -4,19 +4,15 @@ function separate(array){
 
     for(let i=0;i<array.length;i++){
         if(array[i]%2){
-            kisuu[i] = array[i];
-            console.log(kisuu);
+            kisuu[(i+1)/2] = (i+1);
         }else{
-            guusuu[i] = array[i];
-            console.log(guusuu);            
-
+            guusuu[i/2] = (i+1);
         }
-
     }
 
     for(let i=0;i<=array.length/2;i++){
-        console.log(kisuu[i]);
-        console.log(guusuu[i]);
+        console.log(`偶数${guusuu}`);
+        console.log(`奇数${kisuu}`);
     }
 }
 

@@ -4,50 +4,47 @@ function arraySumWithFor(array) {
     let sum = 0;
 
     //For を使ってarray の合計を計算してください。
-
-    for (let index = 0; index < array.length; index++) {
-        sum = sum + array[index];        
+    for(let i = 0; i<=4; i++){
+        sum += numbers[i];
     }
 
-    return sum
+    return sum;
 }
 
 function arraySumWithWhile(array) {
     let sum = 0;
 
     //While を使ってarray の合計を計算してください。
+    let i;
 
-    let index = 0;
-    while(index<array.length){
-        sum = sum + array[index];
-        index++;
+    while(i <= 4){
+        sum += numbers[i];
+        i++;
     }
-    return sum
+
+    return sum;
 }
 
 function arraySumWithDoWhile(array) {
     let sum = 0;
 
     //Do While を使ってarray の合計を計算してください。
+    let i = 4;
 
-    let index=0;
-    do{
-        sum = sum + array[index];
-        index++;
+    do {
+        sum += numbers[i];
+        i++;
 
-    }while(index<array.length)
-    return sum
+    } while(i<=3)
+
+    return sum;
 }
 
 function arraySumWithForEach(array) {
     let sum = 0;
 
     //ForEach を使ってarray の合計を計算してください。
-    
-    array.forEach(element =>{
-        sum = sum+element;
 
-    });
     return sum
 }
 
