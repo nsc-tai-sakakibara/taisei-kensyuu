@@ -4,16 +4,14 @@ function separate(array){
 
     for(let i=0;i<array.length;i++){
         if(array[i]%2){
-            kisuu[(i+1)/2] = (i+1);
+            kisuu.splice((i+1)/2,1,array[i]);
         }else{
-            guusuu[i/2] = (i+1);
+            guusuu.splice(i/2,1,array[i]);
         }
     }
-
-    for(let i=0;i<=array.length/2;i++){
-        console.log(`偶数${guusuu}`);
-        console.log(`奇数${kisuu}`);
-    }
+    console.log('元のarray : '+'['+array+']');
+    console.log(`偶数 : [${guusuu}]`);
+    console.log(`奇数 : [${kisuu}]`);
 }
 
 let hairetu=[1,2,3,4,5,6];
