@@ -1,29 +1,29 @@
-let data;
-let arrayYoko = [];
-let kakunou = [10][10];
+console.log('step 1');
 
-//let kakeru = [];
+for (let y = 1; y <= 10; y++) {
+    var line = '';
 
-for(let i=0;i<=9;i++){
-    for(let j=0;j<=9;j++){
-        arrayYoko.splice(j,1,(i+1)*(j+1));
-    
+    for(let x = 1; x <= 10; x++) {
+        line += ' ' + x * y;
     }
-    console.log(arrayYoko); //なんで５こごとに改行？
-    kakunou[i][] arrayYoko
 
+    console.log(line);       
 }
 
 
-// for(let i=0;i<=9;i++){
-//     arrayYoko.forEach(element =>{
 
-//     kakeru.splice(i,1,2*element);
-//     console.log(kakeru);
-//     console.log(element);
+console.log('step 2');
 
-//     });
-// }
+for (let y = 1; y <= 10; y++) {
+    var line = '';
 
+    for(let x = 1; x <= 10; x++) {
 
-// console.log(kakeru);
+        let padNumber = (x * y).toString().padStart(3, '0');
+
+        line += ' ' + padNumber;
+
+    }
+
+    console.log(line);       
+}
