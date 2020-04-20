@@ -32,14 +32,16 @@ decrescendo(array);
 //console.log(array);
 
 
-function fibonatti(a,x){
-    let suuti=[a,a];
-    for(let i=2;suuti[i-1]<=x;i++){
-        suuti[i]=suuti[i-1]+suuti[i-2];
-        console.log(suuti[i-2]);
+function fibonatti(x,y){
+    let suuti=[0,1];        //手書き×××××
+    for(let i=1;suuti[i]<=x;i++){
+        suuti[i+1]=suuti[i]+suuti[i-1];
+    }
+    for(let j=y;suuti[j]<=x;j++){
+        console.log(suuti[j]);
     }
 }
-//fibonatti(2,34);
+fibonatti(34,5);
 
 let z=0;
 function sosuu(x){
