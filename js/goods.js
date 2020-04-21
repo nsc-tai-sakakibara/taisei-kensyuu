@@ -5,7 +5,7 @@ function rnd(length, limit) {
   }
 }
 rnd(4, 6);
-//console.log(array);
+console.log(array);
 
 function crescendo(a, b) {
   return a - b;
@@ -43,7 +43,7 @@ let z = 0;
 function sosuu(x) {
   if (x > 1) {
     for (let y = 2; y <= x / 2; y++) {
-      if (x % y == 0) {     //汚い×××××
+      if (x % y == 0) {
         console.log(`${x}は${y}の倍数`);
         z = 1; //汚い×××××
       }
@@ -51,6 +51,8 @@ function sosuu(x) {
     if (z == 0) {
       console.log(`${x}は素数`);
     }
+  }else{
+    console.log(`${x}は素数ではない`);
   }
 }
-sosuu(6);
+//sosuu(2);
