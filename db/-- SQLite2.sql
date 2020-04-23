@@ -1,6 +1,6 @@
 -- SQLite
 CREATE TABLE IF NOT EXISTS product(
-    id INTEGER,
+    id INTEGER PRIMARY KEY,
     name TEXT,
     price REAL,
     amount INTEGER
@@ -47,3 +47,5 @@ UPDATE product SET name="コグミ"WHERE id=4;
 SELECT*FROM product; --*はテーブルすべての要素
 SELECT name,price FROM product;
 SELECT name FROM product WHERE price > 100;
+
+DROP TABLE product
